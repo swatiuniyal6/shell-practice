@@ -2,9 +2,9 @@
 
 echo "comments practice"
 
-#this document is for comments practice.
+#this is a single line comment.
 
 <<comment
-practice
-newpractice
+This is
+a multiline text for commenting
 comment
