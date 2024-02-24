@@ -1,17 +1,13 @@
 #!/bin/bash
 
-#ARRAY
-myarray=( 1 20 "beatiful" hello 0.50 )
+myarray=( 1 4 7 "hii" 0.5 "tomorrow" )
 
-echo "All the values in array are ${myarray[*]}" 
-echo "Value in 3rd index ${myarray[3]}"
+echo "The value of full array ${myarray[*]}"
+echo "The value of 2nd index is  ${myarray[2]}"
+echo "The value of the index from 1 to 3 places ${myarray[*]:1:3}"
+echo "The length of the array ${#myarray[*]}"
+echo "${myarray[*]:3}"
 
-#find no.of values in an array
-echo ${#myarray[*]}
+myarray+=( "new" "heya" 0.5 )
+echo "The value of full array ${myarray[*]}"
 
-
-echo "Values from index 1 to 4 places ${myarray[*]:1:4}"
-
-#Updating our array with new values
-myarray+= ( New 30 40 )
-echo "The values for new array is $myarray"
