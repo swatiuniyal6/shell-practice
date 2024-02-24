@@ -10,7 +10,7 @@ echo "Value in 3rd index ${myarray[3]}"
 echo ${#myarray[*]}
 
 
-echo "Values from index 2-3 ${myarray[*]:1:4}"
+echo "Values from index 1 to 4 places ${myarray[*]:1:4}"
 
 #Updating our array with new values
 myarray+= ( New 30 40 )
